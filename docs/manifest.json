@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "package": "mds-project-companion",
+  "type": "extension",
+  "access": "public",
+  "version": "0.2.0",
+  "channel": "alpha",
+  "title": "Project Companion",
+  "docs": [
+    {
+      "id": "usage",
+      "title": "Usage",
+      "file": "USAGE.md",
+      "audience": ["admin"],
+      "topics": ["setup", "settings", "extensions"]
+    },
+    {
+      "id": "privacy",
+      "title": "Privacy",
+      "file": "PRIVACY.md",
+      "audience": ["admin", "legal-review"],
+      "topics": ["privacy", "settings", "exports"]
+    },
+    {
+      "id": "security",
+      "title": "Security",
+      "file": "SECURITY.md",
+      "audience": ["admin", "developer", "support"],
+      "topics": ["security", "api", "troubleshooting"]
+    },
+    {
+      "id": "development",
+      "title": "Development",
+      "file": "DEVELOPMENT.md",
+      "audience": ["developer"],
+      "topics": ["developer", "api", "extensions"]
+    },
+    {
+      "id": "hosted-api-requirements",
+      "title": "Hosted API Requirements",
+      "file": "HOSTED-API-REQUIREMENTS.md",
+      "audience": ["developer", "support"],
+      "topics": ["api", "rest-api", "webhooks", "privacy"]
+    }
+  ]
+}

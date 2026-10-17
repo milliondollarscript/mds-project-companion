@@ -1,0 +1,88 @@
+.mds-project-companion {
+    --companion-gap: 20px;
+    max-width: 1320px;
+}
+
+.mds-project-companion__heading,
+.mds-project-companion__section-heading,
+.mds-project-companion__module,
+.mds-project-companion__state {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.mds-project-companion__heading { margin: 24px 0 18px; }
+.mds-project-companion__heading h1 { margin: 0 0 6px; }
+.mds-project-companion__heading p { margin: 0; max-width: 760px; color: var(--mds3-admin-muted, #64748b); }
+.mds-project-companion__local-badge,
+.mds-project-companion__pill {
+    display: inline-flex;
+    padding: 5px 10px;
+    border: 1px solid var(--mds3-admin-border, #cbd5e1);
+    border-radius: 999px;
+    background: var(--mds3-admin-surface, #fff);
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.mds-project-companion .nav-tab-wrapper { margin-bottom: 24px; }
+.mds-project-companion .mds3-card {
+    padding: 24px;
+    border: 1px solid var(--mds3-admin-border, #cbd5e1);
+    background: var(--mds3-admin-surface, #fff);
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.mds-project-companion__grid { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(280px, .8fr); gap: var(--companion-gap); align-items: start; }
+.mds-project-companion__narrow { max-width: 820px; }
+.mds-project-companion__field { display: grid; gap: 7px; margin: 0 0 16px; }
+.mds-project-companion__field > span { font-weight: 600; }
+.mds-project-companion__field input,
+.mds-project-companion__field textarea,
+.mds-project-companion__field select { width: 100%; max-width: 100%; }
+.mds-project-companion__checks { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 12px 0 18px; }
+.mds-project-companion__three { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 18px; }
+.mds-project-companion__module-grid,
+.mds-project-companion__recommendations { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 20px; }
+.mds-project-companion__module,
+.mds-project-companion__recommendation {
+    padding: 18px;
+    border: 1px solid var(--mds3-admin-border, #cbd5e1);
+    border-radius: 8px;
+    background: var(--mds3-admin-surface-subtle, #f8fafc);
+    color: var(--mds3-admin-text, #1d2327);
+}
+.mds-project-companion__module small { display: block; margin-top: 6px; color: var(--mds3-admin-muted, #64748b); }
+.mds-project-companion__recommendation h3 { margin-top: 0; }
+.mds-project-companion__recommendation dl,
+.mds-project-companion__diagnostics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.mds-project-companion__recommendation dl div,
+.mds-project-companion__diagnostics div { padding: 10px; border: 1px solid var(--mds3-admin-border, #cbd5e1); border-radius: 6px; }
+.mds-project-companion dt { font-weight: 600; }
+.mds-project-companion dd { margin: 4px 0 0; }
+.mds-project-companion__state { padding: 16px; border: 1px solid var(--mds3-admin-border, #cbd5e1); border-radius: 8px; }
+.mds-project-companion__state--disabled { border-left: 4px solid #64748b; }
+.mds-project-companion__preview { margin-top: 20px; padding: 18px; border: 1px solid var(--mds3-admin-border, #cbd5e1); border-radius: 8px; }
+.mds-project-companion pre { overflow: auto; max-height: 520px; padding: 14px; background: var(--mds3-admin-surface-subtle, #f8fafc); border: 1px solid var(--mds3-admin-border, #cbd5e1); border-radius: 6px; color: var(--mds3-admin-text, #1d2327); white-space: pre-wrap; }
+.mds-project-companion__actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.mds-project-companion__actions form { margin: 0; }
+
+@media (max-width: 900px) {
+    .mds-project-companion__grid,
+    .mds-project-companion__module-grid,
+    .mds-project-companion__recommendations { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+    .mds-project-companion .mds3-card { padding: 18px; }
+    .mds-project-companion__heading,
+    .mds-project-companion__section-heading,
+    .mds-project-companion__state { flex-direction: column; }
+    .mds-project-companion__three,
+    .mds-project-companion__recommendation dl,
+    .mds-project-companion__diagnostics { grid-template-columns: 1fr; }
+}

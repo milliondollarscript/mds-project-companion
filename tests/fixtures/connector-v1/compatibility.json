@@ -1,0 +1,80 @@
+{
+  "fixture_version": 1,
+  "contract_version": "1.0",
+  "api_major": "v1",
+  "discovery": {
+    "api_majors": ["v1"],
+    "connector_contracts": ["1.0"],
+    "schema_versions": {
+      "capability_snapshot": [1],
+      "project_context": [1],
+      "product_draft": [1],
+      "offer_draft": [1],
+      "aggregate_metrics": [1],
+      "action_acknowledgement": [1]
+    },
+    "deferred_capabilities": [
+      "webhooks",
+      "scheduled_sync",
+      "publishing",
+      "repository_access",
+      "codex_access",
+      "personal_analytics",
+      "bulk_sync",
+      "automatic_local_actions"
+    ]
+  },
+  "project_context_request": {
+    "schema_version": 1,
+    "preview_hash": "2a9ed0541d9feb1e771f250b662462ec687168ef985a3ba96049036bb99384e4",
+    "selected_field_ids": ["project.name"],
+    "consented_at": "2026-07-29T12:00:00Z",
+    "retention_class": "project_lifecycle",
+    "adapter": {
+      "adapter_key": "generic-project-context",
+      "public_contract": "mds.public.project-context.v1",
+      "schema_version": 1,
+      "source_object_type": "project",
+      "source_object_id": "fixture-project"
+    },
+    "fields": [
+      {
+        "id": "project.name",
+        "source_module": "companion",
+        "purpose": "Name the bound project",
+        "classification": "internal",
+        "value": "Fixture project"
+      }
+    ]
+  },
+  "transfer_result": {
+    "request_id": "req_fixture_transfer01",
+    "payload_digest": "2a9ed0541d9feb1e771f250b662462ec687168ef985a3ba96049036bb99384e4",
+    "schema_version": 1,
+    "fields": [
+      {
+        "field_id": "project.name",
+        "status": "accepted"
+      }
+    ],
+    "replayed": false
+  },
+  "draft_result": {
+    "draft_id": "0190c457-7f6b-7cc2-98f2-e041655ad101",
+    "draft_kind": "product",
+    "state": "draft",
+    "fields": [
+      {
+        "field_id": "name",
+        "status": "accepted"
+      }
+    ],
+    "payload_digest": "c884d2410ac0f0f455e2e3180c247f8e8de271901dc76f7586662b9ee2ccbe6a",
+    "replayed": false
+  },
+  "acknowledgement": {
+    "state": "accepted_for_manual_review",
+    "acknowledged_at": "2026-07-29T12:00:00Z",
+    "note": "Queued for an administrator's manual review."
+  }
+}

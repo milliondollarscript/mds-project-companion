@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scenarios": [
+    "success",
+    "timeout",
+    "invalid-json",
+    "oversized",
+    "schema-mismatch",
+    "revoked",
+    "remote-error"
+  ]
+}
