@@ -35,7 +35,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('MDS_PROJECT_COMPANION_VERSION', '0.2.0');
+define('MDS_PROJECT_COMPANION_VERSION', '0.2.1');
 define('MDS_PROJECT_COMPANION_DB_VERSION', '2');
 define('MDS_PROJECT_COMPANION_FILE', __FILE__);
 define('MDS_PROJECT_COMPANION_PATH', plugin_dir_path(__FILE__));
