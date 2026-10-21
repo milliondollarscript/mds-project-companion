@@ -5,7 +5,7 @@
  * Description:       Plan Million Dollar Script projects locally, review extension recommendations, and share approved context through a consent-bound hosted connector.
  * Version:           0.2.0
  * Requires at least: 6.0
- * Tested up to:      7.1
+ * Tested up to:      7.1.3
  * Requires PHP:      8.1
  * Requires Plugins:  million-dollar-script
  * Author:            Million Dollar Script
