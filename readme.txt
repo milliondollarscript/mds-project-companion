@@ -4,7 +4,7 @@ Tags: million dollar script, planning, recommendations, privacy, integration
 Requires at least: 6.0
 Tested up to: 7.1.3
 Requires PHP: 8.1
-Stable tag: 0.2.0
+Stable tag: 0.2.1
 License: GPL-3.0+
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -43,6 +43,9 @@ No. Product and offer writes are draft-only, and they are not exposed until an a
 Development fixtures live in the source test tree and are excluded from distributable packages.
 
 == Changelog ==
+
+= 0.2.1 =
+* Tested with WordPress 7.1.3 and WooCommerce 11.2.1, and the plugin states the exact versions it was tested with, so WordPress and WooCommerce no longer report it as untested on a current site.
 
 = 0.2.0 =
 

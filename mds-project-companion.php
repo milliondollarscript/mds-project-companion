@@ -3,7 +3,7 @@
  * Plugin Name:       Million Dollar Script - Project Companion
  * Plugin URI:        https://milliondollarscript.com/extensions/project-companion
  * Description:       Plan Million Dollar Script projects locally, review extension recommendations, and share approved context through a consent-bound hosted connector.
- * Version:           0.2.0
+ * Version:           0.2.1
  * Requires at least: 6.0
  * Tested up to:      7.1.3
  * Requires PHP:      8.1
